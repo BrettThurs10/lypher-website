@@ -6,11 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lypher - Your board game buddy for iOS or Android</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-
-
+  <meta name="description" content="Track your board game sessions, then archive them, then snag a selfie. It's Lypher, your new board game buddy.">
+  <meta name="keywords" content="board games, board gaming, board game app, app, tabletop games, tabletop app, board game">
+  <meta name="author" content="Thurston Ideas">
+  <meta property="og:title" content="Lypher: Your Board Game Buddy">
+  <meta property="og:description" content="Your new board game buddy for iOS and Android.">
+  <meta property="og:image" content="http://lypher.app/img/lypher-meta.jpg">
+  <meta property="og:url" content="http://lypher.app">
+  <meta name="twitter:title" content="Lypher: Your Board Game Buddy">
+  <meta name="twitter:description" content="Track your board game sessions, then archive them, then snag a selfie. It's Lypher, your new board game buddy.">
+  <meta name="twitter:image" content="http://lypher.app/img/lypher-meta.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
 
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
@@ -63,8 +69,13 @@
 				<li class="mr-3">
 					<a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 yellow sliding-link" href="#contact">Contact</a>
 				</li>
+				<li class="mr-3">
+					<a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 yellow" href="https://twitter.com/lypherapp"><i class="fab fa-twitter"></i></a>
+				</li>
 			</ul>
-			<button id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-4 shadow opacity-75">Download</button>
+			<a href="#download" class="sliding-link">
+			<button id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-4 shadow opacity-75" >Download</button>
+		</a>
 		</div>
 	</div>
 
@@ -85,8 +96,9 @@
 			<p class="leading-normal text-2xl mb-8 yellow">Your new board game buddy.</p>
 
 
-
-			<button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Download</button>
+			<a href="#download" class="sliding-link relative z-10">
+			<button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg sliding-link" href="#download">Download</button>
+		</a>
 
 		</div>
 		<!--Right Col-->
@@ -138,7 +150,11 @@
 		</div>
 
 
-		<div class="flex flex-wrap sm:flex-row justify-center items-center bg-blue-100 py-16 sm:py-24" id="features">
+		<div class="flex flex-wrap sm:flex-row justify-center items-center bg-blue-100 py-5 sm:pb-24 sm:pt-18" id="features">
+			<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-600">Features</h1>
+			<div class="w-full mb-4">
+				<div class="h-1 mx-auto bg-gray-600 w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+			</div>
 
 			<div class="w-auto sm:w-auto p-6 mt-6 flex items-center justify-center bg-red-200 rounded-full p-20 shadow-md">
 				<img src="img/backpack.svg" class="w-32" />
@@ -201,7 +217,7 @@
 
 
 <!-- Change the colour #f8fafc to match the previous section colour -->
-<svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
 	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 		<g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
 			<g class="wave" fill="rgba(230,255,250)">
@@ -218,7 +234,7 @@
 	</g>
 </svg>
 
-<section class="container mx-auto text-center py-6 mb-12">
+<section class="container mx-auto text-center py-6 mb-12" id="download">
 
 	<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Download</h1>
 	<div class="w-full mb-4">
@@ -227,9 +243,10 @@
 
 	<!-- <h3 class="my-4 text-3xl leading-tight w-1/2 mx-auto">Rule the tabletop with Lypher!</h3> -->
 	<h3 class="my-4 text-xl leading-tight w-1/2 mx-auto">Lypher is currently in beta.</h3>
-
-	<button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">iOS</button>
-	<button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Android</button>
+	<a href="https://testflight.apple.com/join/I30kbeus" target="_blank">
+	<button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">iOS</button></a>
+	<a href="https://play.google.com/apps/testing/com.lypher" target="_blank">
+	<button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Android</button></a>
 
 </section>
 
@@ -257,6 +274,9 @@
                     </li>
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0 sliding-link">
                         <a href="#contact" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
+					</li>
+					<li class="mt-2 inline-block mr-2 md:block md:mr-0 sliding-link">
+                        <a href="#contact" class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i class="fab fa-twitter"></i></a>
                     </li>
                 </ul>
             </div>
@@ -278,14 +298,12 @@
                 <p class="uppercase text-gray-500 md:mb-6">Social</p>
                 <ul class="list-reset mb-6">
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
+                        <a href="https://twitter.com/lypherapp" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
                     </li>
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Board Game Atlas</a>
+                        <a href="https://www.boardgameatlas.com/" class="no-underline hover:underline text-gray-800 hover:text-orange-500" target="_blank">Board Game Atlas</a>
                     </li>
-                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Facebook</a>
-                    </li>
+
                 </ul>
             </div>
             <div class="flex-1">
@@ -299,7 +317,9 @@
                     </li>
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                         <a href="#contact" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
-                    </li>
+					</li>
+
+
                 </ul>
             </div>
         </div>
